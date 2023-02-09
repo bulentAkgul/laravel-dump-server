@@ -20,9 +20,9 @@ Next, you need to publish config file.
 sail artisan vendor:publish --provider="Bakgul\LaravelDumpServer\LaravelDumpServerServiceProvider"
 ```
 
-## Usage
+## Configuration
 
-1. Add the following part to `laravel({ ... })` in `vite.config.js`
+Add the following part to `laravel({ ... })` in `vite.config.js`
 
 ```
 refresh: [
@@ -32,7 +32,7 @@ refresh: [
 ],
 ```
 
-2. Modify your `TestCase`
+Modify your `TestCase`
 
 ```
 use Bakgul\LaravelDumpServer\Concerns\HasDumper;
@@ -50,21 +50,23 @@ class TestCase extends BaseTestCase
 }
 ```
 
-2. Run Vite:
+## Usage
+
+Run Vite:
 
 ```
 npm run dev
 ```
 
-3. Listen to dump server:
+Listen to dump server
 
 ```
 sail artisan dump-server --format=html > vendor/bakgul/laravel-dump-server/resources/dump.html
 ```
 
-4. Add `dump($varToDump)` method anywhere you want to display something.
+Add `dump($varToDump)` method anywhere you want to display something.
 
-5. Go to route `/dump-server`
+Go to route `/dump-server`.
 
 ## License
 
