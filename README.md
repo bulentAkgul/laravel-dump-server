@@ -59,7 +59,7 @@ npm run dev
 3. Listen to dump server:
 
 ```
-sail artisan dump-server --format=html > vendor/bakgul/laravel-dump-server/resources/views/dump.html
+sail artisan dump-server --format=html > vendor/bakgul/laravel-dump-server/resources/dump.html
 ```
 
 4. Add `dump($varToDump)` method anywhere you want to display something.

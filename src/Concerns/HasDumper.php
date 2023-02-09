@@ -4,7 +4,7 @@ namespace Bakgul\LaravelDumpServer\Concerns;
 
 trait HasDumper
 {
-    protected function clearDebugger()
+    protected function resetDumper()
     {
         if (config('debug-server.reset_on_each_test')) {
             copy(
