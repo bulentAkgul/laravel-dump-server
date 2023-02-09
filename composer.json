@@ -1,0 +1,27 @@
+{
+  "name": "bakgul/laravel-dump-server",
+  "description": "A package to make Beyondcode's Laravel Dump Server more practical.",
+  "authors": [
+    {
+      "name": "Bulent Akgul",
+      "email": "bulent.akgul@me.com"
+    }
+  ],
+  "license": "MIT",
+  "require": {
+    "php": "^8.0.2",
+    "beyondcode/laravel-dump-server": "^1.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "Bakgul\\LaravelDumpServer\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Bakgul\\LaravelDumpServer\\LaravelDumpServerServiceProvider"
+      ]
+    }
+  }
+}
