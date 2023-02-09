@@ -4,7 +4,7 @@ This is a wrapper to Beyondcode's [Laravel Dump Server](https://github.com/beyon
 
 1. It will remove the previously printed things when a test runs. If you don't want to do that, make `reset_on_each_test` `false` in `config/dump-server.php`.
 2. It registers a route which is `/dump-server`, and when you display dumpped file on that route, you will get auto-refresh.
-3. Dump file is in dark mode.
+3. Dump file is in dark mode. But, because of a reason that I couldn't figure out, the dark mode will be active after 2 tests runs.
 
 ## Installation
 
