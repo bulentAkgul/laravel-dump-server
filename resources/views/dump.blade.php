@@ -4,12 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Laravel</title>
-        @vite([
-            'resources/js/app.js',
-            'resources/css/app.css',
-        ])
+        @vite([])
     </head>
     <body>
-        <?= include resource_path('views/dump.html') ?>
+        <?= include base_path('vendor/bakgul/laravel-dump-server/resources/dump.html') ?>
     </body>
 </html>

@@ -9,5 +9,5 @@ return [
     /*
      * When this is true, dump file will be refreshed on each test run.
      */
-    'clear_all' => true,
+    'reset_on_each_test' => true,
 ];

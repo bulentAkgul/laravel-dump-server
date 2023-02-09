@@ -10,17 +10,17 @@ class LaravelDumpServerServiceProvider extends ServiceProvider
     {
         $this->loadRoutesFrom(__DIR__ . '/../routes/web.php');
 
-        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'laduse');
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'dump-server');
 
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__ . '/../config/config.php' => config_path('debug-server.php'),
+                __DIR__ . '/../config/config.php' => config_path('dump-server.php'),
             ], 'config');
         }
     }
 
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__ . '/../config/config.php', 'debug-server');
+        $this->mergeConfigFrom(__DIR__ . '/../config/config.php', 'dump-server');
     }
 }
