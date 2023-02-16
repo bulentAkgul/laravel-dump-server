@@ -70,4 +70,4 @@ Go to route `/dump-server`.
 
 ## License
 
-The MIT License (MIT). Please see License File for more information.
+This is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
